@@ -1,38 +1,84 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Lora:wght@400;500;600;700&family=Montserrat:wght@500;700&family=Poppins:wght@500;700&display=swap');
+
+.App__container {
+    font-family: 'Inter', sans-serif;
+    height: auto;
+    display: flex;
+    align-items: center;
+    background: rgb(12, 12, 12);
+    /* background: rgb(231, 123, 123); */
+    cursor: url('https://uploads.codesandbox.io/uploads/user/b3e56831-8b98-4fee-b941-0e27f39883ab/Ad1_-cursor.png') 4 4,
+      auto;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App__sectionOne{
+  height: auto;
+  color: rgb(239, 230, 244);
+  width: 100vw;
+  padding: 10rem;
+  display: grid;
+  grid-template-columns: 45% 55%;
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.App__sectionOneLeft{
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.App__sectionOneRight{
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: start;
 }
 
-.App-link {
-  color: #61dafb;
+
+.App__sectionOneLeft h1{
+  font-family: 'Lora', serif;
+  font-weight: 500;
+  font-size: 2.5rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.App__sectionOneLeft p{
+  font-family: 'Inter', serif;
+  font-weight: 400;
+  font-size: 1rem;
+  width: 70%;
+  color: rgb(191, 174, 199);
+  line-height: 24px;
 }
+
+
+.App__sectionOne button{
+  appearance: button;
+  backface-visibility: hidden;
+  background-color: #7940f5;
+  border-radius: 6px;
+  border-width: 0;
+  box-shadow: rgba(50, 50, 93, .1) 0 0 0 1px inset,rgba(50, 50, 93, .1) 0 2px 5px 0,rgba(0, 0, 0, .07) 0 1px 1px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: url('https://uploads.codesandbox.io/uploads/user/b3e56831-8b98-4fee-b941-0e27f39883ab/Ad1_-cursor.png') 4 4,
+  auto;
+font-family: -apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Ubuntu,sans-serif;
+  font-size: 100%;
+  height: 44px;
+  line-height: 1.15;
+  margin: 12px 0 0;
+  outline: none;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  text-transform: none;
+  transform: translateZ(0);
+  transition: all .2s,box-shadow .08s ease-in;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 35%;
+}
+
+.App__sectionOne button:hover{
+  background-color: #5000fd;
+}
+

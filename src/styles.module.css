@@ -1,0 +1,25 @@
+  .deck {
+    position: absolute;
+    width: 20rem;
+    will-change: transform;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .card {
+    touch-action: none;
+    background-color: white;
+    background-size: auto 50%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    will-change: transform;
+    border-radius: 10px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    overflow: hidden;
+  }
+  
+  .card img {
+    width: 100%;
+    }
+  

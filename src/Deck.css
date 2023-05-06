@@ -1,0 +1,61 @@
+.Deck__deckHolder {
+    position: relative;
+    height: 20vh;
+    width: 22vw;
+}
+
+.Deck__deck {
+    position: absolute;
+    width: auto;
+    will-change: transform;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .Deck__card {
+    touch-action: none;
+    background-color: rgb(32, 32, 32);
+    background-size: auto 50%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    will-change: transform;
+    border-radius: 10px;
+    box-shadow: 0px 0px 0px 2px rgba(54, 54, 54, 0.5), 
+    0px 2px 4px rgba(0,0,0,0.1),
+    0px 4px 8px rgba(0,0,0,0.1),
+    0px 8px 16px rgba(0,0,0,0.1);
+overflow: hidden;
+
+  }
+  
+  .Deck__card img {
+    width: 100%;
+    }
+  
+
+
+.Deck__cardInfo{
+    line-height: 5px;
+    padding: 7px;
+    padding-bottom: 0;
+}
+
+
+.Deck__cardInfoAddress{
+    font-size: 0.8rem;
+    color: rgb(197, 197, 197);
+
+}
+
+.Deck__cardInfoPrice{
+    font-size: 0.8rem;
+    color: rgb(143, 143, 143);
+    font-weight: 500;
+}
+
+.Deck__cardInfoDescription{
+    font-size: 0.7rem;
+    color: rgb(99, 99, 99);
+
+}
