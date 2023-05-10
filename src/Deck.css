@@ -1,7 +1,10 @@
 .Deck__deckHolder {
     position: relative;
-    height: 20vh;
-    width: 22vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 78%;
 }
 
 .Deck__deck {
@@ -15,18 +18,19 @@
   
   .Deck__card {
     touch-action: none;
-    background-color: rgb(32, 32, 32);
+    background-color: rgb(242, 242, 242);
     background-size: auto 50%;
     background-repeat: no-repeat;
     background-position: center center;
     will-change: transform;
     border-radius: 10px;
-    box-shadow: 0px 0px 0px 2px rgba(54, 54, 54, 0.5), 
+    box-shadow: 0px 0px 0px 2px rgba(250, 250, 250, 0.92), 
     0px 2px 4px rgba(0,0,0,0.1),
     0px 4px 8px rgba(0,0,0,0.1),
     0px 8px 16px rgba(0,0,0,0.1);
-overflow: hidden;
-
+    overflow: hidden;
+    cursor: url('https://uploads.codesandbox.io/uploads/user/b3e56831-8b98-4fee-b941-0e27f39883ab/Ad1_-cursor.png') 4 4,
+      auto;
   }
   
   .Deck__card img {
@@ -43,8 +47,12 @@ overflow: hidden;
 
 
 .Deck__cardInfoAddress{
-    font-size: 0.8rem;
-    color: rgb(197, 197, 197);
+    font-family: 'Lora', serif;
+    font-size: 1.5rem;
+    color: #2B1C50;
+    letter-spacing: -2px;
+    line-height: 15px;
+    font-weight: 600;
 
 }
 

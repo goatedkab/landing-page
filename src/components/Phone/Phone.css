@@ -1,0 +1,24 @@
+  
+
+  .phone-case {
+    box-shadow: inset 3px 3px 8px #9a9a9a, inset 0 0 3px #bababa, inset -3px -3px 8px 0px #b4b4b4;
+    border-radius: 50px;
+    background: #ebebeb;
+    width: 20rem;
+    height: 40rem;
+    padding: 0.8rem;
+  }
+
+  
+
+ 
+  .phone-container-inner {
+    position:relative;
+    background:#fff;
+    border-radius:45px;
+    overflow:hidden;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+  }
+

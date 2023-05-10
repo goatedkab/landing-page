@@ -23,7 +23,7 @@ const to = (i) => ({
 const from = (_i) => ({ x: 0, rot: 0, scale: 1.5, y: -1000 })
 // This is being used down there in the view, it interpolates rotation and scale into a css transform
 const trans = (r, s) =>
-  `perspective(2500px) rotateX(30deg) rotateY(${r / 10}deg) rotateZ(${r}deg) scale(${s})`
+  `perspective(2500px) rotateX(20deg) rotateY(${r / 10}deg) rotateZ(${r}deg) scale(${s})`
 
 export default function Deck() {
   const [gone] = useState(() => new Set()) // The set flags all the cards that are flicked out
@@ -33,7 +33,7 @@ export default function Deck() {
   })) // Create a bunch of springs using the helpers above
   // Create a gesture, we're interested in down-state, delta (current-pos - click-pos), direction and velocity
   const bind = useDrag(({ args: [index], active, movement: [mx], direction: [xDir], velocity: [vx] }) => {
-    const trigger = vx > 0.2 // If you flick hard enough it should trigger the card to fly out
+    const trigger = vx > 0.15 // If you flick hard enough it should trigger the card to fly out
     if (!active && trigger) gone.add(index) // If button/finger's up and trigger velocity is reached, we flag the card ready to fly out
     api.start(i => {
       if (index !== i) return // We're only interested in changing spring-data for the current spring
@@ -70,10 +70,9 @@ export default function Deck() {
           >
           <img src={cards[i]} draggable="false"></img>
           <div className="Deck__cardInfo">
-          <b className='Deck__cardInfoAddress'>29C, Parsons Green</b>
+          <b className='Deck__cardInfoAddress'>1 Hyde Park</b>
           <p className='Deck__cardInfoPrice'>£2900pcm</p>
           <p className='Deck__cardInfoDescription'>this house is very very nice</p>
-
           </div>
           </animated.div>
         </animated.div>
