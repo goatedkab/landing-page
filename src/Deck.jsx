@@ -73,6 +73,12 @@ export default function Deck() {
           <b className='Deck__cardInfoAddress'>1 Hyde Park</b>
           <p className='Deck__cardInfoPrice'>£2900pcm</p>
           <p className='Deck__cardInfoDescription'>this house is very very nice</p>
+          <p className='Deck__cardInfoDescription'>this house is very very nice</p>
+          <p className='Deck__cardInfoDescription'>this house is very very nice</p>
+          <p className='Deck__cardInfoDescription'>this house is very very nice</p>
+          <p className='Deck__cardInfoDescription'>this house is very very nice</p>
+          <p className='Deck__cardInfoDescription'>this house is very very nice</p>
+
           </div>
           </animated.div>
         </animated.div>

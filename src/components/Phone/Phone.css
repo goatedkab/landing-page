@@ -3,15 +3,13 @@
   .phone-case {
     box-shadow: inset 3px 3px 8px #9a9a9a, inset 0 0 3px #bababa, inset -3px -3px 8px 0px #b4b4b4;
     border-radius: 50px;
-    background: #ebebeb;
-    width: 20rem;
-    height: 40rem;
+    background: #ebebeb;    
+    width: clamp(16.5rem,21vw,68rem);
+    height: clamp(32rem,39vw,65rem);
     padding: 0.8rem;
+
   }
 
-  
-
- 
   .phone-container-inner {
     position:relative;
     background:#fff;
@@ -22,3 +20,13 @@
     justify-content: center;
   }
 
+
+  @media screen and (max-width: 768px)
+{
+
+    .phone-case {
+        width: 22rem;
+        height: 41rem;
+        border-radius: 55px;
+    }
+}
