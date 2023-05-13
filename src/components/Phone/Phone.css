@@ -1,7 +1,7 @@
   
 
   .phone-case {
-    box-shadow: inset 3px 3px 8px #9a9a9a, inset 0 0 3px #bababa, inset -3px -3px 8px 0px #b4b4b4;
+    box-shadow: inset 3px 3px 8px #9a9a9a, inset 0 0 3px #e6e6e6, inset -3px -3px 8px 0px #cecece;
     border-radius: 50px;
     background: #ebebeb;    
     width: clamp(16.5rem,21vw,68rem);
@@ -25,8 +25,7 @@
 {
 
     .phone-case {
-        width: 22rem;
-        height: 41rem;
-        border-radius: 55px;
+        width: 19.8rem;
+        height: 38rem;
     }
 }

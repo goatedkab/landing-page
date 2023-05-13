@@ -7,6 +7,7 @@ body {
 .App__container {
   font-family: 'Inter', sans-serif;
   height: 100vh;
+
 }
 
 .App__Main{
@@ -17,16 +18,13 @@ body {
   background: #839CF4;
 }
 
-/* .App__Frame {
-  position: absolute;
-  width: 100vw;
-} */
 
 .App__MainRight{
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100%;
+  background: linear-gradient(#b6c6ff, #839CF4);
 }
 
 .App__MainLeft{
@@ -34,8 +32,9 @@ body {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding: 3rem;
+  padding: clamp(3.5rem, 6vw, 9rem);
   padding-right: 1.5rem;
+  background: linear-gradient(#b6c6ff, #839CF4);
 }
 
 
@@ -46,9 +45,7 @@ body {
   color: #2B1C50;
   letter-spacing: -3.5px;
   line-height: clamp(4rem, 5vw, 5rem);
-
   margin: 0;
-
 }
 
 .App__MainLeft p{
@@ -59,8 +56,6 @@ body {
   width: 100%;
   color: #3D2E7C;
   line-height: clamp(1.5rem, 2.3vw, 1.9rem);
-  /* line-height: 1.9rem; */
-
   font-family: 'Inter', sans-serif;
 }
 
@@ -74,8 +69,6 @@ body {
   box-shadow: rgba(50, 50, 93, .1) 0 0 0 1px inset,rgba(50, 50, 93, .1) 0 2px 5px 0,rgba(0, 0, 0, .07) 0 1px 1px 0;
   box-sizing: border-box;
   color: #fff;
-  /* cursor: url('https://uploads.codesandbox.io/uploads/user/b3e56831-8b98-4fee-b941-0e27f39883ab/Ad1_-cursor.png') 4 4,
-  auto; */
   cursor: pointer;
   font-size: 100%;
   outline: none;
@@ -84,34 +77,56 @@ body {
   text-align: center;
   text-transform: none;
   transform: translateZ(0);
-  /* transition: all .2s,box-shadow .08s ease-in; */
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
-  width: 60%;
+  width: clamp(14rem, 60%, 20rem);
   padding: clamp(1.3rem, 1.4vw, 4rem);
   padding-left: 2rem;
   padding-right: 2rem;
   font-size: clamp(1rem, 1.5vw, 1.2rem);
   font-family: 'Inter', sans-serif;
   margin-top: 0.8rem;
-
 }
-
-/* .App__sectionOne button:hover{
-  background-color: #4c51e0;
-  padding: 1.2rem;
-} */
-
-
-
-
 
 
 .App__Black{
-  height: 200vh;
   background-color: black;
 }
+
+.App_BlackBlock{
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 60% 40%;
+}
+
+.App_BlackLeft{
+height: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+padding: 5vw;
+}
+
+.App__Blacktext{
+}
+
+.App__Blacktext h1{
+  font-family: 'Lora', serif;
+  font-weight: 500;
+  font-size: clamp(3.5rem, 4vw, 4rem);
+  color: #ffffff;
+  letter-spacing: -3.5px;
+  line-height: clamp(4rem, 5vw, 5rem);
+  margin: 0;
+  margin-bottom: 2rem;
+  color: #dbdbff;
+}
+
+
+
+
+
 
 
 
@@ -135,6 +150,9 @@ body {
 
   .App__MainLeft{
     padding-right: 3rem;
+    background: #839CF4;
+    background: #b6c6ff;
+
   }
 
   .App__text{
@@ -143,7 +161,23 @@ body {
     align-items: center;
     justify-content: center;
     text-align: center;
+    min-width: 90vw;
   }
+
+  .App__MainLeft h1{
+    font-size: clamp(2.75rem, 10vw, 3.8rem);
+    line-height: clamp(1rem, 12vw, 4rem);
+
+  }
+
+  
+.App__MainRight{
+  padding-bottom: 6rem;
+}
+
+.App__MainLeft button{
+  display: none;
+}
 }
 
 

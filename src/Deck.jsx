@@ -32,6 +32,7 @@ export default function Deck() {
     from: from(i),
   })) // Create a bunch of springs using the helpers above
   // Create a gesture, we're interested in down-state, delta (current-pos - click-pos), direction and velocity
+
   const bind = useDrag(({ args: [index], active, movement: [mx], direction: [xDir], velocity: [vx] }) => {
     const trigger = vx > 0.15 // If you flick hard enough it should trigger the card to fly out
     if (!active && trigger) gone.add(index) // If button/finger's up and trigger velocity is reached, we flag the card ready to fly out
@@ -46,15 +47,19 @@ export default function Deck() {
         rot,
         scale,
         delay: undefined,
-        config: { friction: 50, tension: active ? 800 : isGone ? 200 : 500 },
+        config: { friction: 40, tension: active ? 800 : isGone ? 200 : 500 },
       }
     })
+
     if (!active && gone.size === cards.length)
       setTimeout(() => {
         gone.clear()
         api.start(i => to(i))
       }, 600)
   })
+
+
+
   // Now we're just mapping the animated values to our view, that's it. Btw, this component only renders once. :-)
   return (
     <div className='Deck__deckHolder'>
@@ -72,11 +77,6 @@ export default function Deck() {
           <div className="Deck__cardInfo">
           <b className='Deck__cardInfoAddress'>1 Hyde Park</b>
           <p className='Deck__cardInfoPrice'>£2900pcm</p>
-          <p className='Deck__cardInfoDescription'>this house is very very nice</p>
-          <p className='Deck__cardInfoDescription'>this house is very very nice</p>
-          <p className='Deck__cardInfoDescription'>this house is very very nice</p>
-          <p className='Deck__cardInfoDescription'>this house is very very nice</p>
-          <p className='Deck__cardInfoDescription'>this house is very very nice</p>
           <p className='Deck__cardInfoDescription'>this house is very very nice</p>
 
           </div>

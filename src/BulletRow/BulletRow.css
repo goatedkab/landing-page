@@ -1,0 +1,39 @@
+.BulletRowActive{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: clamp(1rem, 1.4vw, 1.2rem);
+    color: rgb(104, 104, 104);
+    font-size: clamp(1rem, 1.4vw, 1.5rem);
+    height: clamp(3.5rem, 4vw, 5rem);
+    font-weight: 200;
+}
+
+.BulletPointActive{
+    height: 0.9rem;
+    width: 0.9rem;
+    border-radius: 50%;
+    background-color: rgb(104, 104, 104);
+  }
+  
+  
+
+.BulletRow{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: clamp(1rem, 1.4vw, 1.2rem);
+    color: white;
+    font-size: clamp(1rem, 1.4vw, 1.5rem);
+    height: clamp(3.5rem, 4vw, 5rem);
+    font-weight: 500;
+}
+    
+  .BulletPoint{
+    height: 0.9rem;
+    width: 0.9rem;
+    border-radius: 50%;
+    background-color: white;
+  }
+  
+  

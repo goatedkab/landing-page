@@ -10,7 +10,6 @@ const Phone = () => {
                 <Deck/>
                 </div>
             </div>
-    {/* </div> */}
     </div>
     )
 }
